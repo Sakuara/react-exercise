@@ -1,2 +1,2 @@
 # react-exercise
-record road of react
+create cnode structure with react, redux, react-redux, axios, react-router-dom 
