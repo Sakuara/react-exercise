@@ -9,4 +9,4 @@ Create cnode structure with react, redux, react-redux, axios, react-router-dom a
 - less-loader 5.0.0
   
 # Notice
-Please install less-loader 5.0.0 rather than others to avoid stranger problems.
+Please install less-loader which version is 5.0.0 rather than others to avoid any strange question.
