@@ -6,10 +6,14 @@
   "author": "sakuara <845888325@qq.com>",
   "license": "MIT",
   "dependencies": {
+    "@craco/craco": "^6.1.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "antd": "^4.15.1",
     "axios": "^0.21.1",
+    "craco-antd": "^1.19.0",
+    "craco-less": "^1.17.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.3",
@@ -22,6 +26,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "start:c": "craco start",
+    "build:c": "craco build",
+    "test:c": "craco test",
+    "start:a": "nodemon -w craco.config.js -w ./antd.customize.less --exec \"craco start\"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -41,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.13.3"
   }
 }
