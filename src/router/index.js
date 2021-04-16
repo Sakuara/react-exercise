@@ -51,4 +51,19 @@ const routes = [
     },
 ]
 
-export {routes};
+const nav = [
+    {
+        name: '首页',
+        path: '/'
+    },
+    {
+        name: '新手入门',
+        path: '/getstart'
+    },
+    {
+        name: '关于',
+        path: '/about'
+    },
+]
+
+export {routes,nav};
