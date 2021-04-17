@@ -2,7 +2,7 @@ import AboutPage from "../views/about";
 import GetStartPage from "../views/getstart";
 import IndexPage from "../views/index";
 import TopicsPage from "../views/topics";
-import UserPage from "../views/user";
+import UserPage from '../views/about'
 const routes = [
     {
         id: 0,
@@ -66,4 +66,31 @@ const nav = [
     },
 ]
 
-export {routes,nav};
+const indexNav = [
+    {
+        name: '全部',
+        url: '/?tab=all'
+    },
+    {
+        name: '精华',
+        url: '/?tab=good'
+    },
+    {
+        name: '分享',
+        url: '/?tab=share'
+    },
+    {
+        name: '问答',
+        url: '/?tab=ask'
+    },
+    {
+        name: '招聘',
+        url: '/?tab=job'
+    },
+    {
+        name: '客户端测试',
+        url: '/?tab=dev'
+    }
+]
+
+export {routes,nav,indexNav};
