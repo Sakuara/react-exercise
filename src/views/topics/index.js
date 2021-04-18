@@ -15,8 +15,8 @@ export default function TopicsPage() {
   }, [id])
   return (
     <>
-      <Topic id={id} data={data.content} title={title}/>
-      <Reply replies={replies} reply_count={reply_count}/>
+      <Topic id={id} data={data.content} title={title} loading={loading}/>
+      <Reply replies={replies} reply_count={reply_count} loading={loading}/>
     </>
     )
 }
