@@ -12,7 +12,6 @@ function IndexList() {
     let {tab,page} =parse(search,true).query;
     if(!tab) tab = 'all';
     if(!page) page = 1;
-    console.log(loading)
     useEffect(() => {
         getData(tab,page)
     }, [tab,page])
@@ -29,7 +28,6 @@ function IndexList() {
             position:'bottom'
         }}
         renderItem={(rowData) => {
-            console.log(rowData)
             return (
                 <List.Item>
                     <Link to={`/topic/${rowData.id}`}>

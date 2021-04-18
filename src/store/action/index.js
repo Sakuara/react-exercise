@@ -14,4 +14,16 @@ function useTopicsList(){
   }
 }
 
-export {useTopicsList}
+function useTopic(){
+  let dispatch = useDispatch();
+  return function(id,mdrender=true){
+    dispatch({type: 'topic_loading'})
+    http.get(`/topic/${id}?&mdrender=${mdrender}`).then((res) => {
+      if(res.status == 200){
+        dispatch({type: 'topic_loadover',data:res.data.data})
+      }
+    })
+  }
+}
+
+export {useTopicsList,useTopic}
