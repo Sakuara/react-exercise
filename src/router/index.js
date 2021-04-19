@@ -2,7 +2,8 @@ import AboutPage from "../views/about";
 import GetStartPage from "../views/getstart";
 import IndexPage from "../views/index";
 import TopicsPage from "../views/topics";
-import UserPage from '../views/about'
+import UserPage from '../views/about';
+import NotFoundPage from '../views/notfound';
 const routes = [
     {
         id: 0,
@@ -47,6 +48,15 @@ const routes = [
         exact: true,
         render: (props) => {
             return <AboutPage {...props}/>
+        }
+    },
+    {
+        id: 5,
+        name: 'notfound',
+        path: '',
+        exact: true,
+        render: (props) => {
+            return <NotFoundPage {...props}/>
         }
     },
 ]

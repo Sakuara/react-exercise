@@ -13,7 +13,7 @@ function Header(){
                         <h1 style={{color:'#fff'}}>Cnode</h1>
                     </Col>
                     <Col span={20}>
-                        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={[`${activeIndex}`]}>
+                        <Menu theme="dark" mode="horizontal" selectedKeys={[`${activeIndex}`]}>
                             {
                                 nav.map((item,index) => {
                                     return (<Menu.Item key={index}>
