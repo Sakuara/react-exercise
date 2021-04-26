@@ -6,7 +6,7 @@ export default function IndexPagination() {
     let {search} =useLocation();
     let {tab='all',page=1} =qs.parse(search);
   return (
-    <Pagination defaultCurrent={page} pageSize={20} total={500} showQuickJumper={false} itemRender={
+    <Pagination current={page*1} pageSize={20} total={500} showQuickJumper={false} itemRender={
         (page,type) => {
             switch (type) {
                 case 'page':
